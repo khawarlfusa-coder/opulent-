@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Opulent Beauty Bar | Luxury Salon & Spa — Gulshan-e-Iqbal, Karachi</title>
-  <meta name="description" content="Experience bespoke hair transformations, luxury Russian manicures, and medical-grade HydraFacials at The Opulent Beauty Bar, Gulshan-e-Iqbal, Karachi. Book your appointment via WhatsApp.">
-  <meta name="keywords" content="The Opulent Beauty Bar, salon Karachi, hair salon Gulshan e Iqbal, Nanoplastia Karachi, Balayage Karachi, nail bar Karachi, HydraFacial Karachi">
+  <title>The Opulent Beauty Bar | Aesthetics & Luxury Salon — Gulshan-e-Iqbal, Karachi</title>
+  <meta name="description" content="Aesthetics of your best self. Experience bespoke Nanoplastia, luminous balayage, Russian nail artistry, and medical HydraFacials at The Opulent Beauty Bar, Gulshan-e-Iqbal, Karachi.">
+  <meta name="keywords" content="The Opulent Beauty Bar, salon Karachi, Gulshan e Iqbal salon, Nanoplastia Karachi, Balayage Karachi, Russian manicure, HydraFacial Karachi">
   
-  <!-- OpenGraph Meta Tags for Rich Social Sharing -->
-  <meta property="og:title" content="The Opulent Beauty Bar — Karachi's Premier Beauty Sanctuary">
-  <meta property="og:description" content="Hair Artistry, Russian Nails, Luxury Medi-Facials & Signature Bridal Glam. Open Daily 12 PM - 9 PM.">
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="The Opulent Beauty Bar — Aesthetics of Your Best Self">
+  <meta property="og:description" content="Premier beauty sanctuary for hair artistry, Russian nails, and medical-grade skincare in Gulshan-e-Iqbal, Karachi.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://theopulentbeautybar.com">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) + Plus Jakarta Sans (Clean Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -51,808 +50,485 @@
 </head>
 <body>
 
-  <!-- PITCH MODE BANNER (Highlight for Salon Owner) -->
-  <div class="pitch-banner" id="pitchBanner">
-    <div class="container pitch-banner-inner">
-      <div class="pitch-text">
-        <span class="pitch-badge">Client Pitch Preview</span>
-        <span>✨ <strong>Designed exclusively for The Opulent Beauty Bar</strong> — Proposed domains: <code>opulentbeautybar.pk</code> or <code>theopulentbeautybar.com</code></span>
+  <!-- PITCH PREVIEW BANNER -->
+  <aside class="pitch-banner" id="pitchBanner" aria-label="Pitch Preview Mode">
+    <div class="container pitch-inner">
+      <div class="pitch-left">
+        <span class="pitch-pill">Client Pitch Preview</span>
+        <span>✨ <strong>Tailored for The Opulent Beauty Bar</strong> — Proposed domains: <code>opulentbeautybar.pk</code> or <code>theopulentbeautybar.com</code></span>
       </div>
-      <div class="pitch-actions">
-        <button class="btn btn-pitch-sm" id="openPitchModalBtn"><i class="fa-solid fa-chart-line"></i> View Pitch ROI & Value</button>
-        <button class="pitch-close-btn" id="dismissPitchBanner" title="Dismiss preview bar"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TOP ANNOUNCEMENT BAR -->
-  <aside class="top-announcement" aria-label="Salon quick details">
-    <div class="container top-bar-content">
-      <div class="top-info">
-        <span><i class="fa-regular fa-clock"></i> Mon – Sun: 12:00 PM – 9:00 PM</span>
-        <span class="divider">|</span>
-        <span><i class="fa-solid fa-location-dot"></i> Latif Plaza, Block 6, Gulshan-e-Iqbal, Karachi</span>
-      </div>
-      <div class="top-contact">
-        <a href="tel:02134182244"><i class="fa-solid fa-phone"></i> 021-34182244</a>
-        <a href="https://wa.me/923282651011" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> 0328-2651011</a>
-        <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="top-ig"><i class="fa-brands fa-instagram"></i> @theopulent.beautybar</a>
+      <div class="pitch-right">
+        <button class="pitch-action-btn" id="openPitchModalBtn"><i class="fa-solid fa-chart-line"></i> View Pitch Value</button>
+        <button class="pitch-dismiss-btn" id="dismissPitchBanner" title="Dismiss preview bar"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </div>
   </aside>
 
-  <!-- STICKY NAVIGATION -->
+  <!-- SITE HEADER / NAVIGATION -->
   <header class="site-header" id="header">
-    <div class="container header-container">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
       <a href="#hero" class="brand-logo" aria-label="The Opulent Beauty Bar home">
-        <span class="brand-subtitle">THE</span>
-        <span class="brand-title">OPULENT</span>
-        <span class="brand-tagline">BEAUTY BAR • KARACHI</span>
+        <span class="logo-title">THE OPULENT</span>
+        <span class="logo-sub">BEAUTY BAR • KARACHI</span>
       </a>
 
-      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
-        <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#experience" class="nav-link">The Experience</a></li>
-          <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
-          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-          <li><a href="#location" class="nav-link">Find Us</a></li>
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-item">Services</a></li>
+          <li><a href="#about" class="nav-item">About Us</a></li>
+          <li><a href="#process" class="nav-item">Process</a></li>
+          <li><a href="#privilege" class="nav-item">Offers</a></li>
+          <li><a href="#location" class="nav-item">Location</a></li>
         </ul>
       </nav>
 
-      <div class="header-cta-group">
-        <a href="https://wa.me/923282651011?text=Hi%20The%20Opulent%20Beauty%20Bar,%20I%20would%20like%20to%20inquire%20about%20an%20appointment" target="_blank" rel="noopener" class="btn btn-outline-gold header-wa-btn">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
-        <button class="btn btn-gold" id="headerBookBtn">
-          <span>Book Appointment</span>
-          <i class="fa-solid fa-calendar-check"></i>
+      <!-- Right Header Actions -->
+      <div class="header-right">
+        <div class="header-phone-box">
+          <a href="tel:02134182244" class="header-phone">+92 (21) 3418-2244</a>
+          <span class="header-hours">Daily 12:00 – 21:00</span>
+        </div>
+
+        <button class="btn btn-caramel open-booking-trigger" data-service="Consultation">
+          Book Appointment
         </button>
-        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
+
     </div>
   </header>
 
   <main>
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-particles"></div>
-      <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="sparkle"><i class="fa-solid fa-crown"></i></span>
-          <span>Karachi's Haute Beauty Sanctuary</span>
-        </div>
+      <div class="container hero-container">
         
-        <h1 class="hero-title">
-          Where Elegance Meets <br>
-          <span class="gold-gradient-text">Artistic Perfection</span>
-        </h1>
-        
-        <p class="hero-description">
-          Step into Gulshan-e-Iqbal’s premier destination for bespoke Nanoplastia hair transformations, sun-kissed Balayage, precision Russian manicures, and medical-grade HydraFacials.
-        </p>
+        <div class="hero-left">
+          <span class="hero-eyebrow">AESTHETIC SALON & SPA</span>
+          
+          <h1 class="hero-headline">
+            AESTHETICS OF <br>
+            YOUR BEST <br>
+            VERSION
+          </h1>
 
-        <div class="hero-cta-wrap">
-          <button class="btn btn-gold btn-lg open-booking-trigger" data-service="Signature Consultation">
-            <span>Reserve Your Experience</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <a href="#services" class="btn btn-glass btn-lg">
-            <span>Explore Treatment Menu</span>
-          </a>
-        </div>
+          <p class="hero-lead">
+            Modern cosmetology and hair artistry for natural beauty, radiant confidence, and timeless sophistication in Gulshan-e-Iqbal, Karachi.
+          </p>
 
-        <!-- TRUST BADGES -->
-        <div class="hero-stats-grid">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
-            <div class="stat-info">
-              <strong>4.9 / 5.0 Rating</strong>
-              <span>500+ Delighted Clients</span>
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <div class="stat-info">
-              <strong>100% Authentic</strong>
-              <span>Premium European Formulas</span>
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-gem"></i></div>
-            <div class="stat-info">
-              <strong>Private Suites</strong>
-              <span>Quiet Luxury & Hygiene</span>
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
-            <div class="stat-info">
-              <strong>Open 7 Days</strong>
-              <span>12:00 PM – 9:00 PM Daily</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SIGNATURE HIGHLIGHTS BAR -->
-    <section class="signature-highlights">
-      <div class="container">
-        <div class="highlights-grid">
-          <div class="highlight-item">
-            <span class="highlight-tag">Hair Magic</span>
-            <h3>Nanoplastia & Keratin</h3>
-            <p>Formaldehyde-free sleek silk finish that lasts up to 6 months with mirror gloss.</p>
-            <a href="#services" class="link-gold">View Treatments <i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-tag">Nail Studio</span>
-            <h3>Russian Gel & Polygel</h3>
-            <p>Flawless cuticle care, bespoke nail art, and durable extensions crafted with sterile tools.</p>
-            <a href="#services" class="link-gold">Explore Nails <i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-tag">Skin Rituals</span>
-            <h3>Hydra-Glow Facials</h3>
-            <p>Deep pore vortex infusion, hyaluronic hydration, and Casmara radiance therapy.</p>
-            <a href="#services" class="link-gold">Discover Skincare <i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-tag">Bridal & Glam</span>
-            <h3>Signature Makeovers</h3>
-            <p>From soft dewy bridal elegance to red-carpet party looks customized for your facial features.</p>
-            <a href="#services" class="link-gold">Bridal Packages <i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES MENU WITH DYNAMIC TABS -->
-    <section class="services-section" id="services">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-eyebrow">CURATED PAMPERING</span>
-          <h2 class="section-title">The Opulent <span class="gold-gradient-text">Service Menu</span></h2>
-          <p class="section-subtitle">Every ritual is conducted by master stylists using genuine imported professional products.</p>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="service-tabs" role="tablist" aria-label="Service categories">
-          <button class="tab-btn active" data-category="all" role="tab" aria-selected="true">All Rituals</button>
-          <button class="tab-btn" data-category="hair" role="tab" aria-selected="false"><i class="fa-solid fa-wand-magic-sparkles"></i> Hair & Color</button>
-          <button class="tab-btn" data-category="nails" role="tab" aria-selected="false"><i class="fa-solid fa-hand-sparkles"></i> Nail Lounge</button>
-          <button class="tab-btn" data-category="skin" role="tab" aria-selected="false"><i class="fa-solid fa-spa"></i> Facials & Skin</button>
-          <button class="tab-btn" data-category="bridal" role="tab" aria-selected="false"><i class="fa-solid fa-heart"></i> Bridal & Glam</button>
-          <button class="tab-btn" data-category="body" role="tab" aria-selected="false"><i class="fa-solid fa-feather"></i> Waxing & Body</button>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="services-grid" id="servicesGrid">
-
-          <!-- Hair 1 -->
-          <article class="service-card" data-category="hair">
-            <div class="service-card-top">
-              <span class="service-badge">Client Favorite</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 2.5 - 3.5 hrs</span>
-            </div>
-            <h3 class="service-name">Organic Nanoplastia Infusion</h3>
-            <p class="service-desc">Complete organic protein restructuring for frizzy, dull, or rebellious hair. Delivers pin-straight glass shine without harsh chemical fumes.</p>
-            <div class="service-meta">
-              <span class="service-starting">Consultation / Strand Test Included</span>
-              <span class="service-price">From PKR 14,000</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Organic Nanoplastia Infusion">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
+          <div class="hero-actions">
+            <button class="btn btn-caramel btn-lg open-booking-trigger" data-service="Signature Consultation">
+              <span>Book a Consultation</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
-          </article>
-
-          <!-- Hair 2 -->
-          <article class="service-card" data-category="hair">
-            <div class="service-card-top">
-              <span class="service-badge">Signature</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 3 - 4 hrs</span>
-            </div>
-            <h3 class="service-name">Bespoke Balayage & Melt Highlights</h3>
-            <p class="service-desc">Hand-painted multidimensional French balayage tailored to your skin undertone, finished with an Olaplex bond repair treatment and gloss toner.</p>
-            <div class="service-meta">
-              <span class="service-starting">Includes Toner & Treatment</span>
-              <span class="service-price">From PKR 16,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Bespoke Balayage & Melt Highlights">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Hair 3 -->
-          <article class="service-card" data-category="hair">
-            <div class="service-card-top">
-              <span class="service-badge">Smoothing</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 2 hrs</span>
-            </div>
-            <h3 class="service-name">Brazilian Keratin Deep Collagen Therapy</h3>
-            <p class="service-desc">Tames humidity frizz, locks in internal moisture, and seals damaged cuticles for effortless everyday blow-dry elegance.</p>
-            <div class="service-meta">
-              <span class="service-starting">Lasts 4-5 Months</span>
-              <span class="service-price">From PKR 12,000</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Brazilian Keratin Deep Collagen Therapy">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Nails 1 -->
-          <article class="service-card" data-category="nails">
-            <div class="service-card-top">
-              <span class="service-badge">Trending</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 75 mins</span>
-            </div>
-            <h3 class="service-name">Russian E-File Dry Manicure + Gel Art</h3>
-            <p class="service-desc">Medical-grade electric file dry cuticle cleaning followed by flawless under-the-cuticle gel polish and custom luxury nail art accents.</p>
-            <div class="service-meta">
-              <span class="service-starting">Flawless 4+ Weeks Wear</span>
-              <span class="service-price">From PKR 4,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Russian E-File Dry Manicure">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Nails 2 -->
-          <article class="service-card" data-category="nails">
-            <div class="service-card-top">
-              <span class="service-badge">Full Set</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 90 mins</span>
-            </div>
-            <h3 class="service-name">Sculpted Acrylic & Polygel Extensions</h3>
-            <p class="service-desc">Long-lasting bespoke length extensions shaped to almond, coffin, or square perfection with lightweight strength and high-shine top coat.</p>
-            <div class="service-meta">
-              <span class="service-starting">Includes Cuticle Care</span>
-              <span class="service-price">From PKR 7,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Sculpted Acrylic & Polygel Extensions">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Nails 3 -->
-          <article class="service-card" data-category="nails">
-            <div class="service-card-top">
-              <span class="service-badge">Relaxation</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 60 mins</span>
-            </div>
-            <h3 class="service-name">Rose & Milk Luxury Spa Pedicure</h3>
-            <p class="service-desc">Warm botanical foot soak, Himalayan pink salt exfoliation, callous softening, paraffin hydration mask, and deep tension-release massage.</p>
-            <div class="service-meta">
-              <span class="service-starting">With High-Shine Finish</span>
-              <span class="service-price">PKR 3,800</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Rose & Milk Luxury Spa Pedicure">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Skin 1 -->
-          <article class="service-card" data-category="skin">
-            <div class="service-card-top">
-              <span class="service-badge">Best Seller</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 60 mins</span>
-            </div>
-            <h3 class="service-name">7-in-1 Medical HydraFacial Elite</h3>
-            <p class="service-desc">Vortex deep pore extraction, ultrasonic scrubbing, fruit-acid exfoliation, radiofrequency tightening, and deep cold hammer calming infusion.</p>
-            <div class="service-meta">
-              <span class="service-starting">Zero Downtime Instant Glow</span>
-              <span class="service-price">PKR 6,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="7-in-1 Medical HydraFacial Elite">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Skin 2 -->
-          <article class="service-card" data-category="skin">
-            <div class="service-card-top">
-              <span class="service-badge">European Formula</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 75 mins</span>
-            </div>
-            <h3 class="service-name">Casmara 24K Gold Luxury Algae Facial</h3>
-            <p class="service-desc">Revitalizing Spanish algae peel-off mask infused with 24K gold dust, magnesium, and restorative peptides to tone and plump mature or tired skin.</p>
-            <div class="service-meta">
-              <span class="service-starting">Includes Neck & Decollete</span>
-              <span class="service-price">PKR 8,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Casmara 24K Gold Luxury Algae Facial">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Bridal 1 -->
-          <article class="service-card" data-category="bridal">
-            <div class="service-card-top">
-              <span class="service-badge">Signature Bridal</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 3.5 hrs</span>
-            </div>
-            <h3 class="service-name">Signature Barat / Walima Bridal Glam</h3>
-            <p class="service-desc">Complete bespoke bridal look: HD airbrush or luminous cream contour, customized mink lashes, couture hairstyling, dupatta setting & jewelry pinning.</p>
-            <div class="service-meta">
-              <span class="service-starting">Includes Hair Accessories</span>
-              <span class="service-price">From PKR 35,000</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Signature Barat / Walima Bridal Glam">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Bridal 2 -->
-          <article class="service-card" data-category="bridal">
-            <div class="service-card-top">
-              <span class="service-badge">Red Carpet</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 90 mins</span>
-            </div>
-            <h3 class="service-name">Opulent Party Makeup & Glam Blowout</h3>
-            <p class="service-desc">Flawless soft-glam or dramatic smokey eyes with full coverage complexion prep, individual lash clusters, and editorial Hollywood waves.</p>
-            <div class="service-meta">
-              <span class="service-starting">Includes Premium Lashes</span>
-              <span class="service-price">PKR 8,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Opulent Party Makeup & Glam Blowout">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Body 1 -->
-          <article class="service-card" data-category="body">
-            <div class="service-card-top">
-              <span class="service-badge">Italian Wax</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 60 mins</span>
-            </div>
-            <h3 class="service-name">Full Body Rica Aloe Waxing Ritual</h3>
-            <p class="service-desc">100% colophony-free Italian liposoluble Rica wax. Gentle on sensitive skin, removes ingrown hair, and includes soothing post-wax lotus lotion.</p>
-            <div class="service-meta">
-              <span class="service-starting">Hygienic Disposable Sheets</span>
-              <span class="service-price">From PKR 5,500</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Full Body Rica Aloe Waxing Ritual">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-          <!-- Body 2 -->
-          <article class="service-card" data-category="body">
-            <div class="service-card-top">
-              <span class="service-badge">Silk Skin</span>
-              <span class="service-time"><i class="fa-regular fa-clock"></i> 45 mins</span>
-            </div>
-            <h3 class="service-name">Moroccan Hammam Body Polish & Glow</h3>
-            <p class="service-desc">Traditional eucalyptus black soap application, Kessa mitt full body exfoliation, followed by pure argan oil radiance massage.</p>
-            <div class="service-meta">
-              <span class="service-starting">Pure Rejuvenation</span>
-              <span class="service-price">PKR 6,000</span>
-            </div>
-            <button class="btn btn-service-book open-booking-trigger" data-service="Moroccan Hammam Body Polish & Glow">
-              <span>Book Appointment</span>
-              <i class="fa-solid fa-calendar-plus"></i>
-            </button>
-          </article>
-
-        </div>
-
-        <div class="service-footer-note text-center">
-          <p><i class="fa-solid fa-circle-info"></i> Need a personalized hair or skin consultation? Our senior specialists offer <strong>free 15-minute consultations</strong> before your appointment.</p>
-          <button class="btn btn-gold open-booking-trigger" data-service="Free 15-Min Salon Consultation">
-            <i class="fa-brands fa-whatsapp"></i> Book Free Consultation via WhatsApp
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- THE OPULENT EXPERIENCE / WHY US -->
-    <section class="experience-section" id="experience">
-      <div class="container">
-        <div class="experience-layout">
-          <div class="experience-text">
-            <span class="section-eyebrow">THE OPULENT PHILOSOPHY</span>
-            <h2 class="section-title">A Sanctuary Created For <span class="gold-gradient-text">Uncompromising Quality</span></h2>
-            <p class="lead-text">
-              Located in the heart of Gulshan-e-Iqbal Block 6, The Opulent Beauty Bar was founded on a simple principle: beauty should never come at the expense of hair health or hygiene.
-            </p>
             
-            <div class="pillars-list">
-              <div class="pillar-item">
-                <div class="pillar-icon"><i class="fa-solid fa-pump-soap"></i></div>
-                <div class="pillar-content">
-                  <h4>Hospital-Grade Sterilization</h4>
-                  <p>Every metal instrument is sealed in medical sterilization pouches and autoclaved. Disposable pedicure liners and files for 100% peace of mind.</p>
-                </div>
-              </div>
+            <a href="#about" class="hero-tour-btn">
+              <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+              <span>Tour the Sanctuary</span>
+            </a>
+          </div>
+        </div>
 
-              <div class="pillar-item">
-                <div class="pillar-icon"><i class="fa-solid fa-flask-vial"></i></div>
-                <div class="pillar-content">
-                  <h4>Zero Counterfeits — Guaranteed</h4>
-                  <p>We source directly from licensed distributors of Olaplex, L'Oréal Professionnel, CND, and Casmara Spain. No watered-down formulas.</p>
-                </div>
-              </div>
+        <div class="hero-right">
+          <div class="hero-portrait-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" 
+              alt="The Opulent Beauty Bar aesthetic model"
+              class="hero-portrait-img"
+              loading="eager"
+            >
+            <div class="hero-ambient-glow"></div>
+          </div>
+        </div>
 
-              <div class="pillar-item">
-                <div class="pillar-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                <div class="pillar-content">
-                  <h4>Attentive, Unrushed Hospitality</h4>
-                  <p>Relax in an aesthetic, soothing ambiance with complimentary premium espresso, cold refreshments, and dedicated stylists who listen to your vision.</p>
-                </div>
-              </div>
+      </div>
+    </section>
+
+    <!-- 4 CORE VALUE PILLARS BAR -->
+    <section class="pillars-section">
+      <div class="container">
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-regular fa-gem"></i>
             </div>
-
-            <div class="experience-cta">
-              <a href="https://wa.me/923282651011?text=Hi%20The%20Opulent%20Beauty%20Bar,%20I%20would%20like%20to%20book%20a%20slot" target="_blank" rel="noopener" class="btn btn-gold">
-                <span>Direct WhatsApp Inquiries</span>
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="tel:02134182244" class="btn btn-glass">
-                <i class="fa-solid fa-phone"></i> Call 021-34182244
-              </a>
+            <div class="pillar-text">
+              <h4>Master Specialists</h4>
+              <p>Certified stylists and aestheticians with international master training.</p>
             </div>
           </div>
 
-          <div class="experience-visual">
-            <div class="visual-stack">
-              <div class="image-card main-img">
-                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="The Opulent Beauty Bar interior luxury salon" loading="lazy">
-              </div>
-              <div class="image-card accent-img">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Hair styling treatment" loading="lazy">
-              </div>
-              <div class="floating-badge">
-                <span class="badge-num">100%</span>
-                <span class="badge-label">Sterilized & Certified Clean</span>
-              </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div class="pillar-text">
+              <h4>Safety & Authentic Quality</h4>
+              <p>100% genuine licensed European formulations: Olaplex, Casmara, L'Oréal.</p>
             </div>
           </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="pillar-text">
+              <h4>Bespoke Approach</h4>
+              <p>Personalized protocols and complimentary strand tests tailored to your goals.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <div class="pillar-text">
+              <h4>Comfort & Privacy</h4>
+              <p>Private VIP suites, medical-grade hygiene, and relaxing quiet luxury.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- LOOKBOOK / GALLERY SECTION -->
-    <section class="lookbook-section" id="lookbook">
+    <!-- POPULAR PROCEDURES SECTION -->
+    <section class="procedures-section" id="services">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="section-eyebrow">PORTFOLIO OF ARTISTRY</span>
-          <h2 class="section-title">The Opulent <span class="gold-gradient-text">Lookbook</span></h2>
-          <p class="section-subtitle">Real clients. Real transformations. Explore our signature work across hair, nails, and glow aesthetics.</p>
-        </div>
-
-        <div class="gallery-filter-bar">
-          <button class="gallery-filter-btn active" data-filter="all">All Looks</button>
-          <button class="gallery-filter-btn" data-filter="hair">Hair & Color</button>
-          <button class="gallery-filter-btn" data-filter="nails">Nail Studio</button>
-          <button class="gallery-filter-btn" data-filter="glow">Skin & Glow</button>
-          <button class="gallery-filter-btn" data-filter="bridal">Bridal & Glam</button>
-        </div>
-
-        <div class="gallery-grid" id="galleryGrid">
-          
-          <!-- Item 1 -->
-          <div class="gallery-item" data-filter="hair">
-            <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=600&q=80" alt="Nanoplastia silky hair transformation" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Hair Ritual</span>
-              <h4>Glass Finish Nanoplastia</h4>
-              <p>6 months frizz-free mirror shine</p>
-            </div>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="gallery-item" data-filter="hair">
-            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="Honey blonde balayage hair color" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Color Transformation</span>
-              <h4>Sunlit Honey Balayage</h4>
-              <p>Seamless blend with Olaplex therapy</p>
-            </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="gallery-item" data-filter="nails">
-            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="Russian Gel manicure with chrome nail art" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Nail Bar</span>
-              <h4>Glazed Russian Chrome Nails</h4>
-              <p>Clean e-file cuticle detailing</p>
-            </div>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="gallery-item" data-filter="glow">
-            <img src="https://images.unsplash.com/photo-1512290900672-1f4153fae999?auto=format&fit=crop&w=600&q=80" alt="HydraFacial glow client result" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Medi-Skin</span>
-              <h4>Hydra-Glow Dewy Complexion</h4>
-              <p>Unclogged pores with deep radiance</p>
-            </div>
-          </div>
-
-          <!-- Item 5 -->
-          <div class="gallery-item" data-filter="bridal">
-            <img src="https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?auto=format&fit=crop&w=600&q=80" alt="Signature bridal glam look" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Bridal Suite</span>
-              <h4>Royal Barat Signature Glam</h4>
-              <p>Classic dewy makeup & couture hair</p>
-            </div>
-          </div>
-
-          <!-- Item 6 -->
-          <div class="gallery-item" data-filter="nails">
-            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Nail extensions and french tips" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-cat">Nail Bar</span>
-              <h4>French Ombré Acrylic Sculpt</h4>
-              <p>Clean modern timeless aesthetic</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="gallery-footer text-center">
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="btn btn-outline-gold">
-            <i class="fa-brands fa-instagram"></i> Follow @theopulent.beautybar on Instagram
+        
+        <div class="section-top-row">
+          <h2 class="section-heading">Popular Rituals & Procedures</h2>
+          <a href="#servicesGrid" class="view-all-link">
+            <span>Explore all services</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
+
+        <div class="procedures-grid" id="servicesGrid">
+          
+          <!-- Card 1: Hardware & Medi-Facials -->
+          <article class="procedure-card">
+            <div class="procedure-img-wrap">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="7-in-1 Medical HydraFacial" loading="lazy">
+              <div class="procedure-badge">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+            </div>
+            <div class="procedure-content">
+              <h3 class="procedure-title">7-in-1 Medical HydraFacial Elite</h3>
+              <p class="procedure-desc">Deep ultrasonic pore cleansing, fruit-acid exfoliation, and cold hammer infusion for instant poreless glow.</p>
+              <div class="procedure-footer">
+                <span class="procedure-price">from PKR 6,500</span>
+                <button class="procedure-arrow-btn open-booking-trigger" data-service="7-in-1 Medical HydraFacial Elite" aria-label="Book HydraFacial">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Hair Transformations -->
+          <article class="procedure-card">
+            <div class="procedure-img-wrap">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Organic Nanoplastia Infusion" loading="lazy">
+              <div class="procedure-badge">
+                <i class="fa-solid fa-feather"></i>
+              </div>
+            </div>
+            <div class="procedure-content">
+              <h3 class="procedure-title">Organic Nanoplastia Infusion</h3>
+              <p class="procedure-desc">Formaldehyde-free organic amino acid therapy that heals, aligns, and delivers glass mirror straightness for up to 6 months.</p>
+              <div class="procedure-footer">
+                <span class="procedure-price">from PKR 14,000</span>
+                <button class="procedure-arrow-btn open-booking-trigger" data-service="Organic Nanoplastia Infusion" aria-label="Book Nanoplastia">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Color Artistry & Balayage -->
+          <article class="procedure-card">
+            <div class="procedure-img-wrap">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Bespoke French Balayage" loading="lazy">
+              <div class="procedure-badge">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+            </div>
+            <div class="procedure-content">
+              <h3 class="procedure-title">French Balayage & Gloss Melt</h3>
+              <p class="procedure-desc">Hand-painted multidimensional blonde or caramel highlights paired with Olaplex bond repair and custom gloss toner.</p>
+              <div class="procedure-footer">
+                <span class="procedure-price">from PKR 16,500</span>
+                <button class="procedure-arrow-btn open-booking-trigger" data-service="French Balayage & Gloss Melt" aria-label="Book Balayage">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Russian Nail Studio -->
+          <article class="procedure-card">
+            <div class="procedure-img-wrap">
+              <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="Russian E-File Dry Manicure" loading="lazy">
+              <div class="procedure-badge">
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+            </div>
+            <div class="procedure-content">
+              <h3 class="procedure-title">Russian E-File Manicure & Gel Art</h3>
+              <p class="procedure-desc">Flawless dry cuticle cleaning using sterilized e-file bits, sculpted shape, and 4+ weeks durable gel polish.</p>
+              <div class="procedure-footer">
+                <span class="procedure-price">from PKR 4,500</span>
+                <button class="procedure-arrow-btn open-booking-trigger" data-service="Russian E-File Manicure" aria-label="Book Russian Manicure">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
       </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials-section" id="testimonials">
+    <!-- ABOUT THE SALON / CLINIC BLOCK -->
+    <section class="about-section" id="about">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="section-eyebrow">CLIENT LOVE</span>
-          <h2 class="section-title">Words From Our <span class="gold-gradient-text">Cherished Clients</span></h2>
-          <p class="section-subtitle">Real experiences from women who trust us with their crowning glory and self-care rituals.</p>
+        
+        <div class="about-card">
+          
+          <!-- Left Interior Image -->
+          <div class="about-img-col">
+            <img 
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" 
+              alt="The Opulent Beauty Bar luxury salon reception"
+              class="about-img"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Middle Content -->
+          <div class="about-content-col">
+            <span class="about-eyebrow">ABOUT THE OPULENT</span>
+            <p class="about-lead">
+              <strong>The Opulent Beauty Bar</strong> is an exclusive sanctuary of aesthetics and quiet luxury in Gulshan-e-Iqbal Block 6, Karachi. We unite medical-grade protocols, advanced hair science, and attentive care at every touchpoint.
+            </p>
+
+            <ul class="about-checklist">
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Imported certified European formulations & devices</span>
+              </li>
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Signature Brazilian & French transformation methodologies</span>
+              </li>
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Hospital-grade autoclave tool sterilization standards</span>
+              </li>
+            </ul>
+
+            <div class="about-cta-wrap">
+              <button class="btn btn-caramel open-booking-trigger" data-service="About Us Visit">
+                Schedule a Visit
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Key Stats Column -->
+          <div class="about-stats-col">
+            <div class="stat-block">
+              <strong class="stat-num">7+</strong>
+              <span class="stat-label">Years of salon artistry in Karachi</span>
+            </div>
+            
+            <div class="stat-divider"></div>
+
+            <div class="stat-block">
+              <strong class="stat-num">15 000+</strong>
+              <span class="stat-label">Delighted clients and transformations</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-block">
+              <strong class="stat-num">20+</strong>
+              <span class="stat-label">Master certified stylists & therapists</span>
+            </div>
+          </div>
+
         </div>
 
-        <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "I got Nanoplastia done at The Opulent Beauty Bar 3 months ago and my hair is still pin-straight, shiny, and frizz-free even in Karachi's humid weather! The salon is spotless and the staff is genuinely lovely."
-            </p>
-            <div class="client-meta">
-              <div class="client-avatar">AA</div>
-              <div class="client-info">
-                <strong>Areeba Alvi</strong>
-                <span>Gulshan-e-Iqbal, Karachi • Nanoplastia Client</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "Finding someone who actually understands Russian manicures in Karachi was so hard until I discovered Opulent. Their cuticle work is so clean and the gel stayed flawless for 5 full weeks. Definitely my permanent nail spot!"
-            </p>
-            <div class="client-meta">
-              <div class="client-avatar">MK</div>
-              <div class="client-info">
-                <strong>Mahnoor Khan</strong>
-                <span>DHA Phase 6 • Regular Nail & HydraFacial</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "Their Balayage service is unmatched. They did a strand test first, explained the tone matching, and used Olaplex throughout. My hair didn't get damaged at all! The coffee and luxury vibe are an added bonus."
-            </p>
-            <div class="client-meta">
-              <div class="client-avatar">SZ</div>
-              <div class="client-info">
-                <strong>Sadia Zaidi</strong>
-                <span>Gulshan Block 6 • Balayage Transformation</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- INSTAGRAM LIVE FEED MOCKUP -->
-    <section class="ig-showcase-section">
+    <!-- 4-STEP BEAUTY APPROACH PROCESS FLOW -->
+    <section class="process-section" id="process">
       <div class="container text-center">
-        <div class="ig-header">
-          <i class="fa-brands fa-instagram ig-icon"></i>
-          <div>
-            <h3>Join The Opulent Community</h3>
-            <p>Tag <strong>@theopulent.beautybar</strong> in your salon selfie to be featured on our feed.</p>
-          </div>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="btn btn-gold btn-sm">
-            Follow on Instagram
-          </a>
-        </div>
+        
+        <h2 class="section-heading">A Comprehensive Approach to Your Radiance</h2>
+        <p class="section-subtext">Every visit follows a deliberate 4-step journey crafted for perfection and peace of mind.</p>
 
-        <div class="ig-grid">
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80" alt="Salon styling" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=400&q=80" alt="Nail styling" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80" alt="Salon interior" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=400&q=80" alt="Hair transformation" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1512290900672-1f4153fae999?auto=format&fit=crop&w=400&q=80" alt="Glowing skin treatment" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" class="ig-photo">
-            <img src="https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?auto=format&fit=crop&w=400&q=80" alt="Bridal glam makeup" loading="lazy">
-            <span class="ig-photo-overlay"><i class="fa-brands fa-instagram"></i></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="faq-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-eyebrow">COMMON QUESTIONS</span>
-          <h2 class="section-title">Frequently Asked <span class="gold-gradient-text">Questions</span></h2>
-          <p class="section-subtitle">Everything you need to know before visiting The Opulent Beauty Bar.</p>
-        </div>
-
-        <div class="faq-accordion">
+        <div class="process-flow">
           
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Do I need to make an appointment in advance?</span>
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-              <p>While we welcome walk-ins based on chair availability, we strongly recommend booking in advance—especially for long treatments like Nanoplastia, Balayage, HydraFacials, and weekend appointments—to ensure zero wait time in our VIP suites.</p>
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="process-circle">
+              <i class="fa-regular fa-comments"></i>
+              <span class="step-num">01</span>
             </div>
+            <h4 class="step-title">Consultation</h4>
+            <p class="step-desc">Complimentary hair strand test and skin diagnosis to define your exact goals.</p>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What is the difference between Keratin and Nanoplastia?</span>
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-              <p>Nanoplastia is an organic, formaldehyde-free amino acid treatment that penetrates the hair cortex to heal and straighten without harsh fumes or tears. Keratin primarily coats the hair shaft for frizz reduction. Our senior stylists offer free strand tests to advise which one suits your hair best.</p>
+          <!-- Connector -->
+          <div class="process-connector"></div>
+
+          <!-- Step 2 -->
+          <div class="process-step">
+            <div class="process-circle">
+              <i class="fa-regular fa-clipboard"></i>
+              <span class="step-num">02</span>
             </div>
+            <h4 class="step-title">Planning</h4>
+            <p class="step-desc">Custom tailored formula and treatment roadmap designed for your features.</p>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What hygiene protocols do you follow for manicure & pedicure?</span>
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-              <p>We adhere to strict hospital-grade hygiene: all stainless steel cuticle pushers, nippers, and bits are autoclaved and sealed in individual sterile pouches opened right in front of you. Foot tubs feature single-use disposable protective liners.</p>
+          <!-- Connector -->
+          <div class="process-connector"></div>
+
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="process-circle">
+              <i class="fa-solid fa-sparkles"></i>
+              <span class="step-num">03</span>
             </div>
+            <h4 class="step-title">Procedure</h4>
+            <p class="step-desc">Expert master execution in private suites with premium refreshments.</p>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Where exactly is the salon located in Gulshan-e-Iqbal?</span>
-              <i class="fa-solid fa-chevron-down"></i>
+          <!-- Connector -->
+          <div class="process-connector"></div>
+
+          <!-- Step 4 -->
+          <div class="process-step">
+            <div class="process-circle">
+              <i class="fa-regular fa-face-smile"></i>
+              <span class="step-num">04</span>
+            </div>
+            <h4 class="step-title">Result</h4>
+            <p class="step-desc">Effortless, long-lasting radiance supported by customized home-care advice.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SPECIAL PRIVILEGE / PROMO BANNER -->
+    <section class="privilege-section" id="privilege">
+      <div class="container">
+        
+        <div class="privilege-card">
+          
+          <div class="privilege-text">
+            <h3 class="privilege-title">Enjoy 10% Off Your First Visit</h3>
+            <p class="privilege-desc">
+              Your journey to renewed beauty and confidence begins here. Reserve online today to receive your welcome privilege card across any hair, facial, or nail service.
+            </p>
+
+            <button class="btn btn-caramel-outline open-booking-trigger" data-service="10% First Visit Privilege">
+              <span>Book with 10% Privilege</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <div class="faq-answer">
-              <p>We are conveniently situated at Shop No. 10/1, Latif Plaza, Block 6, Gulshan-e-Iqbal, Karachi. Dedicated parking assistance is available, and we are easily accessible from University Road and Rashid Minhas Road.</p>
+          </div>
+
+          <div class="privilege-visual">
+            <img 
+              src="https://images.unsplash.com/photo-1512290900672-1f4153fae999?auto=format&fit=crop&w=700&q=80" 
+              alt="Glowing skin results"
+              class="privilege-img"
+              loading="lazy"
+            >
+            <div class="privilege-nav-dots">
+              <button class="nav-arrow-btn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="nav-arrow-btn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- LOCATION & CONTACT SECTION -->
+    <!-- LOCATION & TIMINGS SECTION -->
     <section class="location-section" id="location">
       <div class="container">
-        <div class="location-grid">
+        
+        <div class="location-layout">
           
-          <!-- Contact & Hours Card -->
-          <div class="location-info-card">
-            <span class="section-eyebrow">VISIT OUR SANCTUARY</span>
-            <h2 class="section-title">Gulshan-e-Iqbal, <br><span class="gold-gradient-text">Karachi</span></h2>
-            
-            <div class="info-blocks">
-              <div class="info-block">
-                <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="location-details">
+            <span class="location-eyebrow">VISIT OUR SANCTUARY</span>
+            <h2 class="section-heading">Gulshan-e-Iqbal, <br>Karachi</h2>
+
+            <div class="location-meta-list">
+              
+              <div class="meta-item">
+                <div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div>
                   <strong>Address</strong>
                   <p id="salonAddress">Shop No. 10/1, Latif Plaza, Block 6, Gulshan-e-Iqbal, Karachi, Pakistan</p>
-                  <button class="btn-copy-address" id="copyAddressBtn" title="Copy address to clipboard">
+                  <button class="copy-address-btn" id="copyAddressBtn">
                     <i class="fa-regular fa-copy"></i> Copy Address
                   </button>
                 </div>
               </div>
 
-              <div class="info-block">
-                <div class="icon-circle"><i class="fa-regular fa-clock"></i></div>
+              <div class="meta-item">
+                <div class="meta-icon"><i class="fa-regular fa-clock"></i></div>
                 <div>
-                  <strong>Salon Timings</strong>
-                  <p>Monday – Sunday: <strong>12:00 PM – 9:00 PM</strong><br><span class="text-gold">Open 7 days a week</span></p>
+                  <strong>Salon Hours</strong>
+                  <p>Monday – Sunday: <strong>12:00 PM – 9:00 PM</strong> (Open 7 Days)</p>
                 </div>
               </div>
 
-              <div class="info-block">
-                <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+              <div class="meta-item">
+                <div class="meta-icon"><i class="fa-solid fa-phone"></i></div>
                 <div>
-                  <strong>Landline Phone</strong>
-                  <p><a href="tel:02134182244" class="phone-link">021-34182244</a></p>
+                  <strong>Landline & WhatsApp</strong>
+                  <p>
+                    <a href="tel:02134182244" class="contact-link">021-34182244</a> &nbsp;|&nbsp; 
+                    <a href="https://wa.me/923282651011" target="_blank" rel="noopener" class="contact-link">0328-2651011</a>
+                  </p>
                 </div>
               </div>
 
-              <div class="info-block">
-                <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
-                <div>
-                  <strong>WhatsApp Bookings & Helpline</strong>
-                  <p><a href="https://wa.me/923282651011" target="_blank" rel="noopener" class="phone-link">0328-2651011</a></p>
-                </div>
-              </div>
             </div>
 
-            <div class="location-buttons">
-              <a href="https://wa.me/923282651011?text=Hello%20The%20Opulent%20Beauty%20Bar,%20I%20need%20location%20assistance" target="_blank" rel="noopener" class="btn btn-gold">
-                <i class="fa-brands fa-whatsapp"></i> Message on WhatsApp
+            <div class="location-btns-group">
+              <a href="https://wa.me/923282651011?text=Hi%20The%20Opulent%20Beauty%20Bar,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="btn btn-caramel">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
               </a>
-              <a href="https://maps.google.com/?q=Latif+Plaza+Gulshan-e-Iqbal+Block+6+Karachi" target="_blank" rel="noopener" class="btn btn-glass">
-                <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+              <a href="https://maps.google.com/?q=Latif+Plaza+Gulshan-e-Iqbal+Block+6+Karachi" target="_blank" rel="noopener" class="btn btn-caramel-outline">
+                <i class="fa-solid fa-diamond-turn-right"></i> Open Google Maps
               </a>
             </div>
           </div>
 
-          <!-- Embedded Map -->
-          <div class="location-map-wrap">
+          <div class="location-map-col">
             <iframe 
-              title="The Opulent Beauty Bar Location Map"
+              title="The Opulent Beauty Bar Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.6654763327663!2d67.09848577595333!3d24.909384543297127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f2a1b931971%3A0xe54ef5bb50cfb7c9!2sLatif%20Plaza%2C%20Gulshan-e-Iqbal%2C%20Karachi!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
               width="100%" 
               height="100%" 
@@ -864,131 +540,122 @@
           </div>
 
         </div>
+
       </div>
     </section>
   </main>
 
-  <!-- LUXURY FOOTER -->
+  <!-- CLEAN EDITORIAL FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-content">
+    <div class="container footer-grid">
+      
+      <!-- Col 1: Brand -->
       <div class="footer-col brand-col">
-        <div class="footer-logo">
-          <span class="brand-subtitle">THE</span>
-          <span class="brand-title">OPULENT</span>
-          <span class="brand-tagline">BEAUTY BAR • KARACHI</span>
-        </div>
-        <p class="footer-tagline">Karachi’s bespoke sanctuary for organic Nanoplastia, sun-kissed balayage, Russian nail artistry, and clinical HydraFacials.</p>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/923282651011" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="tel:02134182244" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
-        </div>
+        <span class="logo-title">THE OPULENT</span>
+        <span class="logo-sub">BEAUTY BAR • KARACHI</span>
+        <p class="footer-desc">
+          Karachi's bespoke sanctuary for organic Nanoplastia, sun-kissed Balayage, Russian nail studio, and medical-grade HydraFacials.
+        </p>
+        <span class="footer-copy">&copy; 2026 The Opulent Beauty Bar. All rights reserved.</span>
       </div>
 
+      <!-- Col 2: Services -->
       <div class="footer-col">
-        <h4>Signature Rituals</h4>
-        <ul>
+        <h5 class="footer-heading">Services</h5>
+        <ul class="footer-links">
           <li><a href="#services">Organic Nanoplastia</a></li>
-          <li><a href="#services">Bespoke Balayage</a></li>
-          <li><a href="#services">Russian Dry Manicure</a></li>
+          <li><a href="#services">French Balayage</a></li>
           <li><a href="#services">7-in-1 HydraFacial</a></li>
-          <li><a href="#services">Rica Aloe Waxing</a></li>
+          <li><a href="#services">Russian Dry Manicure</a></li>
           <li><a href="#services">Signature Bridal Glam</a></li>
         </ul>
       </div>
 
+      <!-- Col 3: Sanctuary -->
       <div class="footer-col">
-        <h4>Quick Navigation</h4>
-        <ul>
-          <li><a href="#hero">Welcome</a></li>
-          <li><a href="#services">Full Price Menu</a></li>
-          <li><a href="#experience">The Opulent Standards</a></li>
-          <li><a href="#lookbook">Client Lookbook</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#location">Hours & Location</a></li>
+        <h5 class="footer-heading">Sanctuary</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Our Story</a></li>
+          <li><a href="#process">4-Step Approach</a></li>
+          <li><a href="#privilege">Client Privilege Club</a></li>
+          <li><a href="https://www.instagram.com/theopulent.beautybar/" target="_blank" rel="noopener">Instagram @theopulent.beautybar</a></li>
+          <li><a href="#location">Find Our Location</a></li>
         </ul>
       </div>
 
-      <div class="footer-col">
-        <h4>Salon Hours & Visit</h4>
-        <p class="footer-hours">
-          <strong>Open Everyday</strong><br>
-          12:00 PM – 9:00 PM<br>
-          Shop 10/1, Latif Plaza, Block 6, Gulshan-e-Iqbal, Karachi.
-        </p>
-        <div class="footer-cta-box">
-          <button class="btn btn-gold btn-block open-booking-trigger" data-service="Quick Inquiry">
-            Book Next Appointment
+      <!-- Col 4: Contacts & Direct Booking -->
+      <div class="footer-col contact-col">
+        <h5 class="footer-heading">Direct Inquiries</h5>
+        <p class="footer-contact-line">Latif Plaza, Block 6, Gulshan-e-Iqbal, Karachi</p>
+        <p class="footer-contact-line"><strong>Tel:</strong> 021-34182244</p>
+        <p class="footer-contact-line"><strong>WhatsApp:</strong> 0328-2651011</p>
+        
+        <div class="footer-cta-wrap">
+          <button class="btn btn-caramel btn-block open-booking-trigger" data-service="Footer Consultation">
+            Book Appointment
           </button>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>&copy; 2026 The Opulent Beauty Bar. All rights reserved.</p>
-        <p class="pitch-credit">Prepared with luxury design standards for <strong>The Opulent Beauty Bar</strong>.</p>
-      </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/923282651011?text=Hello%20The%20Opulent%20Beauty%20Bar,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="floating-wa-btn" aria-label="Book on WhatsApp" id="floatingWaBtn">
-    <div class="wa-tooltip">Instant WhatsApp Booking</div>
+  <!-- FLOATING WHATSAPP PILL / BUTTON -->
+  <a href="https://wa.me/923282651011?text=Hello%20The%20Opulent%20Beauty%20Bar,%20I%20would%20like%20to%20inquire%20about%20an%20appointment" target="_blank" rel="noopener" class="floating-wa-btn" aria-label="Book on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-label">WhatsApp Booking</span>
   </a>
 
-  <!-- INTERACTIVE BOOKING MODAL (Connected directly to WhatsApp) -->
+  <!-- INTERACTIVE BOOKING MODAL (Connected to WhatsApp 0328-2651011) -->
   <div class="modal-backdrop" id="bookingModalBackdrop" aria-hidden="true">
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close-btn" id="closeBookingModalBtn" aria-label="Close booking modal">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" id="closeBookingModalBtn" aria-label="Close modal">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <div class="modal-header">
-        <span class="modal-eyebrow">VIP RESERVATION</span>
-        <h3 id="modalTitle">Reserve Your Experience</h3>
-        <p>Choose your treatment and preferred time. Your details will be formatted into an instant WhatsApp confirmation for our front desk.</p>
+      <div class="modal-head">
+        <span class="modal-eyebrow">RESERVATION</span>
+        <h3 id="modalTitle" class="modal-title">Book Your Appointment</h3>
+        <p class="modal-sub">Choose your treatment and preferred slot. Your reservation will be pre-formatted directly into WhatsApp for instant confirmation.</p>
       </div>
 
-      <form class="booking-form" id="bookingForm">
+      <form class="modal-form" id="bookingForm">
         <div class="form-group">
-          <label for="clientName">Your Full Name <span class="required">*</span></label>
+          <label for="clientName">Your Full Name <span class="req">*</span></label>
           <input type="text" id="clientName" placeholder="e.g. Ayesha Khan" required>
         </div>
 
-        <div class="form-row">
+        <div class="form-grid">
           <div class="form-group">
-            <label for="clientPhone">Phone / WhatsApp Number <span class="required">*</span></label>
+            <label for="clientPhone">Phone / WhatsApp <span class="req">*</span></label>
             <input type="tel" id="clientPhone" placeholder="03XX-XXXXXXX" required>
           </div>
           <div class="form-group">
-            <label for="serviceCategory">Category <span class="required">*</span></label>
+            <label for="serviceCategory">Category <span class="req">*</span></label>
             <select id="serviceCategory" required>
-              <option value="hair">Hair & Color Treatments</option>
-              <option value="nails">Nail Studio & Mani-Pedi</option>
               <option value="skin">Facials & Medi-Skin</option>
+              <option value="hair">Hair Treatments & Color</option>
+              <option value="nails">Nail Studio & Mani-Pedi</option>
               <option value="bridal">Bridal & Event Glam</option>
-              <option value="body">Waxing & Body Rituals</option>
-              <option value="consultation">Free Consultation (15 Mins)</option>
+              <option value="consultation">Complimentary Consultation (15 Mins)</option>
             </select>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="serviceSelect">Select Specific Treatment <span class="required">*</span></label>
+          <label for="serviceSelect">Select Procedure <span class="req">*</span></label>
           <select id="serviceSelect" required>
-            <!-- Dynamically populated based on category -->
+            <!-- Populated via script.js -->
           </select>
         </div>
 
-        <div class="form-row">
+        <div class="form-grid">
           <div class="form-group">
-            <label for="bookingDate">Preferred Date <span class="required">*</span></label>
+            <label for="bookingDate">Preferred Date <span class="req">*</span></label>
             <input type="date" id="bookingDate" required>
           </div>
           <div class="form-group">
-            <label for="bookingTime">Preferred Time Slot <span class="required">*</span></label>
+            <label for="bookingTime">Preferred Time <span class="req">*</span></label>
             <select id="bookingTime" required>
               <option value="12:00 PM">12:00 PM</option>
               <option value="01:00 PM">01:00 PM</option>
@@ -998,95 +665,77 @@
               <option value="05:00 PM">05:00 PM</option>
               <option value="06:00 PM">06:00 PM</option>
               <option value="07:00 PM">07:00 PM</option>
-              <option value="08:00 PM">08:00 PM (Last slot)</option>
+              <option value="08:00 PM">08:00 PM</option>
             </select>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="bookingNotes">Special Requests or Hair/Skin Notes (Optional)</label>
-          <textarea id="bookingNotes" rows="2" placeholder="e.g. Previously bleached hair, sensitive skin, etc."></textarea>
-        </div>
-
-        <!-- WhatsApp Preview Box -->
-        <div class="wa-preview-box">
-          <div class="wa-preview-header">
-            <i class="fa-brands fa-whatsapp"></i> Pre-formatted WhatsApp Message to <strong>0328-2651011</strong>:
+        <!-- Live WhatsApp Message Preview -->
+        <div class="wa-preview-card">
+          <div class="wa-preview-top">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Preview (Sent to <strong>0328-2651011</strong>)
           </div>
-          <div class="wa-preview-text" id="waMessagePreview">
-            Fill the fields above to see live message preview...
+          <div class="wa-preview-body" id="waMessagePreview">
+            Fill the details above to preview message...
           </div>
         </div>
 
-        <button type="submit" class="btn btn-gold btn-block btn-lg">
+        <button type="submit" class="btn btn-caramel btn-block btn-lg">
           <i class="fa-brands fa-whatsapp"></i> Confirm & Send via WhatsApp
         </button>
-
-        <p class="form-footnote text-center">
-          <i class="fa-solid fa-lock"></i> No payment required now. Our receptionist will confirm your slot within 15 minutes.
-        </p>
       </form>
     </div>
   </div>
 
-  <!-- PITCH INSIGHTS MODAL (For Salon Owner Presentation) -->
+  <!-- PITCH MODAL FOR SALON OWNER PRESENTATION -->
   <div class="modal-backdrop" id="pitchModalBackdrop" aria-hidden="true">
-    <div class="modal-dialog pitch-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pitchTitle">
+    <div class="modal-card pitch-modal-card" role="dialog" aria-modal="true" aria-labelledby="pitchTitle">
       <button class="modal-close-btn" id="closePitchModalBtn" aria-label="Close pitch modal">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <div class="modal-header">
-        <span class="modal-eyebrow">EXCLUSIVE VALUE PROPOSITION</span>
-        <h3 id="pitchTitle">Why The Opulent Beauty Bar Needs This Website</h3>
-        <p>A strategic breakdown for the salon management showing how this standalone website elevates brand prestige and maximizes appointment conversion.</p>
+      <div class="modal-head">
+        <span class="modal-eyebrow">EXCLUSIVE STRATEGY</span>
+        <h3 id="pitchTitle" class="modal-title">Why This Website Elevates The Opulent</h3>
+        <p class="modal-sub">How this modern, European aesthetic website increases bookings and footfall in Gulshan-e-Iqbal, Karachi.</p>
       </div>
 
-      <div class="pitch-modal-body">
-        
-        <div class="pitch-point-grid">
-          <div class="pitch-point-card">
-            <div class="pitch-icon"><i class="fa-brands fa-instagram"></i></div>
-            <h4>Stop Losing DM Bookings</h4>
-            <p>Clients asking for "price please" on Instagram often get lost or take hours to convert. A 1-click link in your bio lets them browse services and send a pre-filled booking instantly.</p>
-          </div>
-
-          <div class="pitch-point-card">
-            <div class="pitch-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
-            <h4>Dominate Gulshan-e-Iqbal Google Search</h4>
-            <p>Women searching Google for <em>"best hair salon in Gulshan Block 6"</em> or <em>"Nanoplastia Karachi"</em> can’t find private Instagram profiles easily. A dedicated website with Google schema captures this high-intent organic footfall.</p>
-          </div>
-
-          <div class="pitch-point-card">
-            <div class="pitch-icon"><i class="fa-solid fa-globe"></i></div>
-            <h4>Recommended Domains Ready to Connect</h4>
-            <ul class="domain-list">
-              <li><strong><code>opulentbeautybar.pk</code></strong> — High local trust in Pakistan.</li>
-              <li><strong><code>theopulentbeautybar.com</code></strong> — Exact Instagram handle match.</li>
-              <li><strong><code>theopulent.pk</code></strong> — Ultra-clean luxury branding.</li>
-            </ul>
-          </div>
-
-          <div class="pitch-point-card">
-            <div class="pitch-icon"><i class="fa-solid fa-bolt"></i></div>
-            <h4>Zero Hosting Headache</h4>
-            <p>Built with modern, lightweight architecture that loads in under 1 second on mobile 4G networks across Karachi with zero lag.</p>
-          </div>
+      <div class="pitch-reasons-grid">
+        <div class="reason-item">
+          <i class="fa-brands fa-instagram reason-icon"></i>
+          <h4>Automate Instagram Bio Traffic</h4>
+          <p>Don't lose clients who ask "Price please" in DMs. This 1-click booking page pre-fills their exact request straight into WhatsApp.</p>
         </div>
 
-        <div class="pitch-footer-cta">
-          <p><strong>Ready to launch this on your salon’s domain?</strong> Contact our web development team today to finalize domain registration and custom features.</p>
-          <button class="btn btn-gold" id="pitchCloseActionBtn">Return to Interactive Demo</button>
+        <div class="reason-item">
+          <i class="fa-solid fa-chart-line reason-icon"></i>
+          <h4>Dominate Gulshan Block 6 Google Search</h4>
+          <p>Rank for high-intent local searches: "best salon in Gulshan", "Nanoplastia Karachi", and "Russian nails Karachi".</p>
         </div>
 
+        <div class="reason-item">
+          <i class="fa-solid fa-globe reason-icon"></i>
+          <h4>Proposed Premium Domains</h4>
+          <p><code>opulentbeautybar.pk</code> or <code>theopulentbeautybar.com</code> ready for instant connection.</p>
+        </div>
+
+        <div class="reason-item">
+          <i class="fa-solid fa-shield-halved reason-icon"></i>
+          <h4>High-Trust Clinic Aesthetic</h4>
+          <p>Warm beige, porcelain cream and caramel tones create an immediate high-end European medical spa impression.</p>
+        </div>
+      </div>
+
+      <div class="pitch-modal-footer">
+        <button class="btn btn-caramel" id="pitchCloseActionBtn">Return to Interactive Demo</button>
       </div>
     </div>
   </div>
 
   <!-- TOAST NOTIFICATION -->
-  <div class="toast-notification" id="toastNotification">
-    <i class="fa-solid fa-circle-check"></i>
-    <span id="toastMessage">Address copied to clipboard!</span>
+  <div class="toast-box" id="toastBox">
+    <i class="fa-solid fa-check"></i>
+    <span id="toastMsg">Address copied to clipboard!</span>
   </div>
 
   <script src="script.js"></script>

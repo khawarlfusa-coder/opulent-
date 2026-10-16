@@ -1,56 +1,46 @@
 /**
- * THE OPULENT BEAUTY BAR — INTERACTIVE BEHAVIOR & WHATSAPP ENGINE
- * Direct WhatsApp: +92 328 2651011
+ * THE OPULENT BEAUTY BAR — INTERACTIVE CLINIQUE ENGINE
+ * Connected to WhatsApp: +92 328 2651011 (Gulshan-e-Iqbal, Karachi)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // SALON DATA
   const SALON_WHATSAPP = '923282651011';
-  
+
   const SERVICES_DATA = {
-    hair: [
-      "Organic Nanoplastia Infusion (From PKR 14,000)",
-      "Bespoke Balayage & Melt Highlights (From PKR 16,500)",
-      "Brazilian Keratin Deep Collagen Therapy (From PKR 12,000)",
-      "Olaplex Bond Rebuilding & Scalp Spa (PKR 6,500)",
-      "Global Ammonia-Free Color & Gloss (From PKR 9,500)",
-      "Signature Blowout & Hollywood Waves (PKR 3,500)"
-    ],
-    nails: [
-      "Russian E-File Dry Manicure + Gel Art (From PKR 4,500)",
-      "Sculpted Acrylic & Polygel Extensions (From PKR 7,500)",
-      "Rose & Milk Luxury Spa Pedicure (PKR 3,800)",
-      "Chrome Glazed / French Ombré Nails (PKR 5,500)",
-      "Gel Polish Removal & Nail Strengthening (PKR 1,800)"
-    ],
     skin: [
       "7-in-1 Medical HydraFacial Elite (PKR 6,500)",
       "Casmara 24K Gold Luxury Algae Facial (PKR 8,500)",
       "Korean Glass Skin Radiance Peeling (PKR 7,500)",
       "Deep Ultrasonic Pore Extraction & Purifying (PKR 4,500)"
     ],
+    hair: [
+      "Organic Nanoplastia Infusion (From PKR 14,000)",
+      "French Balayage & Gloss Melt (From PKR 16,500)",
+      "Brazilian Keratin Deep Collagen Therapy (From PKR 12,000)",
+      "Olaplex Bond Rebuilding & Scalp Spa (PKR 6,500)",
+      "Signature Blowout & Hollywood Waves (PKR 3,500)"
+    ],
+    nails: [
+      "Russian E-File Manicure & Gel Art (From PKR 4,500)",
+      "Sculpted Acrylic & Polygel Extensions (From PKR 7,500)",
+      "Rose & Milk Luxury Spa Pedicure (PKR 3,800)",
+      "Chrome Glazed / French Ombré Nails (PKR 5,500)"
+    ],
     bridal: [
       "Signature Barat / Walima Bridal Glam (From PKR 35,000)",
       "Mehndi / Mayun Soft Glow Look (From PKR 22,000)",
-      "Opulent Party Makeup & Glam Blowout (PKR 8,500)",
-      "Complete Bridal Prep Package (Skin, Hair, Nails) (Custom Quote)"
-    ],
-    body: [
-      "Full Body Rica Aloe Waxing Ritual (From PKR 5,500)",
-      "Moroccan Hammam Body Polish & Glow (PKR 6,000)",
-      "Full Arms & Legs Fruit Waxing (PKR 2,800)",
-      "Full Face Herbal Threading & Shaping (PKR 1,200)"
+      "Opulent Party Makeup & Glam Blowout (PKR 8,500)"
     ],
     consultation: [
-      "Free 15-Min Hair & Strand Test Consultation (PKR 0)",
-      "Free 15-Min Skin & Facial Analysis Consultation (PKR 0)",
-      "Bridal Package Custom Consultation (PKR 0)"
+      "Complimentary Hair Strand Test & Diagnosis (Free)",
+      "Complimentary Skin & Facial Analysis (Free)",
+      "Custom Bridal Package Consultation (Free)"
     ]
   };
 
   /* -------------------------------------------------------------
-     1. STICKY HEADER & ACTIVE NAV
+     1. STICKY HEADER
      ------------------------------------------------------------- */
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
@@ -65,101 +55,25 @@ document.addEventListener('DOMContentLoaded', () => {
      2. MOBILE MENU TOGGLE
      ------------------------------------------------------------- */
   const mobileToggle = document.getElementById('mobileMenuToggle');
-  const mainNav = document.getElementById('mainNav');
+  const navMenu = document.getElementById('navMenu') || document.getElementById('mainNav');
 
-  if (mobileToggle && mainNav) {
+  if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('open');
-      const expanded = mainNav.classList.contains('open');
-      mobileToggle.setAttribute('aria-expanded', expanded);
+      navMenu.classList.toggle('open');
     });
 
-    // Close mobile nav when clicking nav links
-    document.querySelectorAll('.nav-link').forEach(link => {
+    document.querySelectorAll('.nav-item, .nav-link').forEach(link => {
       link.addEventListener('click', () => {
-        mainNav.classList.remove('open');
+        navMenu.classList.remove('open');
       });
     });
   }
 
   /* -------------------------------------------------------------
-     3. SERVICE MENU TABS FILTERING
-     ------------------------------------------------------------- */
-  const tabButtons = document.querySelectorAll('.service-tabs .tab-btn');
-  const serviceCards = document.querySelectorAll('.services-grid .service-card');
-
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabButtons.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-
-      const targetCategory = btn.getAttribute('data-category');
-
-      serviceCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (targetCategory === 'all' || cardCategory === targetCategory) {
-          card.style.display = 'flex';
-          card.style.animation = 'fadeIn 0.4s ease forwards';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  /* -------------------------------------------------------------
-     4. LOOKBOOK GALLERY FILTERING
-     ------------------------------------------------------------- */
-  const galleryFilterBtns = document.querySelectorAll('.gallery-filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
-
-  galleryFilterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      galleryFilterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      galleryItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-filter');
-        if (filter === 'all' || itemCategory === filter) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  /* -------------------------------------------------------------
-     5. FAQ ACCORDION
-     ------------------------------------------------------------- */
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.faq-question');
-    questionBtn.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-      
-      // Close all other items
-      faqItems.forEach(i => i.classList.remove('active'));
-
-      if (!isActive) {
-        item.classList.add('active');
-      }
-    });
-  });
-
-  /* -------------------------------------------------------------
-     6. BOOKING MODAL & DYNAMIC WHATSAPP GENERATOR
+     3. BOOKING MODAL & DYNAMIC WHATSAPP GENERATOR
      ------------------------------------------------------------- */
   const bookingBackdrop = document.getElementById('bookingModalBackdrop');
   const closeBookingBtn = document.getElementById('closeBookingModalBtn');
-  const headerBookBtn = document.getElementById('headerBookBtn');
   const openBookingTriggers = document.querySelectorAll('.open-booking-trigger');
 
   const categorySelect = document.getElementById('serviceCategory');
@@ -168,23 +82,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const clientPhoneInput = document.getElementById('clientPhone');
   const bookingDateInput = document.getElementById('bookingDate');
   const bookingTimeSelect = document.getElementById('bookingTime');
-  const bookingNotesInput = document.getElementById('bookingNotes');
   const waPreviewText = document.getElementById('waMessagePreview');
   const bookingForm = document.getElementById('bookingForm');
 
-  // Set default minimum date to today
+  // Set default minimum date
   if (bookingDateInput) {
     const today = new Date().toISOString().split('T')[0];
     bookingDateInput.min = today;
     bookingDateInput.value = today;
   }
 
-  // Populate treatments based on selected category
   function populateTreatments(catKey, preselectedName = null) {
     if (!treatmentSelect) return;
     treatmentSelect.innerHTML = '';
 
-    const list = SERVICES_DATA[catKey] || SERVICES_DATA.hair;
+    const list = SERVICES_DATA[catKey] || SERVICES_DATA.skin;
     list.forEach(item => {
       const opt = document.createElement('option');
       opt.value = item;
@@ -196,37 +108,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Generate live WhatsApp message
   function updateWaPreview() {
     if (!waPreviewText) return;
 
-    const name = clientNameInput.value.trim() || '[Your Name]';
-    const phone = clientPhoneInput.value.trim() || '[Your Phone]';
-    const category = categorySelect.options[categorySelect.selectedIndex]?.text || '';
-    const treatment = treatmentSelect.value || 'Hair Treatment / Consultation';
-    const date = bookingDateInput.value || 'Tomorrow';
-    const time = bookingTimeSelect.value || '12:00 PM';
-    const notes = bookingNotesInput.value.trim();
+    const name = clientNameInput ? (clientNameInput.value.trim() || '[Your Name]') : '';
+    const phone = clientPhoneInput ? (clientPhoneInput.value.trim() || '[Your Phone]') : '';
+    const category = categorySelect ? (categorySelect.options[categorySelect.selectedIndex]?.text || '') : '';
+    const treatment = treatmentSelect ? (treatmentSelect.value || 'Consultation') : '';
+    const date = bookingDateInput ? (bookingDateInput.value || 'Tomorrow') : '';
+    const time = bookingTimeSelect ? (bookingTimeSelect.value || '12:00 PM') : '';
 
     let preview = `*APPOINTMENT INQUIRY — THE OPULENT BEAUTY BAR*\n`;
     preview += `--------------------------------------\n`;
-    preview += `• *Client Name:* ${name}\n`;
+    preview += `• *Client:* ${name}\n`;
     preview += `• *Phone / WhatsApp:* ${phone}\n`;
     preview += `• *Category:* ${category}\n`;
-    preview += `• *Requested Treatment:* ${treatment}\n`;
+    preview += `• *Procedure:* ${treatment}\n`;
     preview += `• *Preferred Date:* ${date}\n`;
     preview += `• *Preferred Time:* ${time}\n`;
-    if (notes) {
-      preview += `• *Client Notes:* ${notes}\n`;
-    }
     preview += `--------------------------------------\n`;
-    preview += `_Sent via website appointment portal (Gulshan Block 6)_`;
+    preview += `_Sent via online appointment portal (Gulshan Block 6)_`;
 
     waPreviewText.textContent = preview;
     return preview;
   }
 
-  // Event Listeners for Live Preview
   if (categorySelect) {
     categorySelect.addEventListener('change', () => {
       populateTreatments(categorySelect.value);
@@ -234,34 +140,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  [clientNameInput, clientPhoneInput, treatmentSelect, bookingDateInput, bookingTimeSelect, bookingNotesInput].forEach(elem => {
+  [clientNameInput, clientPhoneInput, treatmentSelect, bookingDateInput, bookingTimeSelect].forEach(elem => {
     if (elem) {
       elem.addEventListener('input', updateWaPreview);
       elem.addEventListener('change', updateWaPreview);
     }
   });
 
-  // Open modal handler
   function openBookingModal(preselectedService = null) {
     if (!bookingBackdrop) return;
     bookingBackdrop.classList.add('open');
     bookingBackdrop.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    // If preselectedService is given, try matching category
     if (preselectedService) {
-      let matchedCat = 'hair';
+      let matchedCat = 'skin';
       const pLow = preselectedService.toLowerCase();
-      if (pLow.includes('nail') || pLow.includes('pedicure') || pLow.includes('manicure')) matchedCat = 'nails';
-      else if (pLow.includes('facial') || pLow.includes('hydra') || pLow.includes('skin') || pLow.includes('casmara')) matchedCat = 'skin';
-      else if (pLow.includes('bridal') || pLow.includes('makeup') || pLow.includes('glam')) matchedCat = 'bridal';
-      else if (pLow.includes('wax') || pLow.includes('polish') || pLow.includes('threading')) matchedCat = 'body';
-      else if (pLow.includes('consultation')) matchedCat = 'consultation';
+      if (pLow.includes('nanoplastia') || pLow.includes('balayage') || pLow.includes('hair') || pLow.includes('keratin')) {
+        matchedCat = 'hair';
+      } else if (pLow.includes('nail') || pLow.includes('manicure') || pLow.includes('pedicure')) {
+        matchedCat = 'nails';
+      } else if (pLow.includes('bridal') || pLow.includes('glam') || pLow.includes('makeup')) {
+        matchedCat = 'bridal';
+      } else if (pLow.includes('consultation')) {
+        matchedCat = 'consultation';
+      }
 
       if (categorySelect) categorySelect.value = matchedCat;
       populateTreatments(matchedCat, preselectedService);
     } else {
-      populateTreatments(categorySelect ? categorySelect.value : 'hair');
+      populateTreatments(categorySelect ? categorySelect.value : 'skin');
     }
 
     updateWaPreview();
@@ -274,10 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  if (headerBookBtn) {
-    headerBookBtn.addEventListener('click', () => openBookingModal());
-  }
-
   openBookingTriggers.forEach(btn => {
     btn.addEventListener('click', () => {
       const svc = btn.getAttribute('data-service');
@@ -285,9 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  if (closeBookingBtn) {
-    closeBookingBtn.addEventListener('click', closeBookingModal);
-  }
+  if (closeBookingBtn) closeBookingBtn.addEventListener('click', closeBookingModal);
 
   if (bookingBackdrop) {
     bookingBackdrop.addEventListener('click', (e) => {
@@ -295,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Handle Form Submit -> Direct to WhatsApp
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -303,20 +204,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const encodedMsg = encodeURIComponent(message);
       const waUrl = `https://wa.me/${SALON_WHATSAPP}?text=${encodedMsg}`;
       
-      // Open WhatsApp in new tab
       window.open(waUrl, '_blank');
-      
       closeBookingModal();
       showToast('Opening WhatsApp with your booking details...');
     });
   }
 
-  // Initialize treatments on start
-  populateTreatments('hair');
+  // Initial population
+  populateTreatments('skin');
   updateWaPreview();
 
   /* -------------------------------------------------------------
-     7. PITCH INSIGHTS MODAL & BANNER
+     4. PITCH INSIGHTS MODAL & BANNER
      ------------------------------------------------------------- */
   const pitchBanner = document.getElementById('pitchBanner');
   const dismissPitchBtn = document.getElementById('dismissPitchBanner');
@@ -356,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* -------------------------------------------------------------
-     8. COPY ADDRESS TO CLIPBOARD
+     5. COPY ADDRESS TO CLIPBOARD
      ------------------------------------------------------------- */
   const copyAddressBtn = document.getElementById('copyAddressBtn');
   const salonAddress = document.getElementById('salonAddress');
@@ -367,17 +266,17 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(addressText).then(() => {
         showToast('Address copied to clipboard! 📋');
       }).catch(() => {
-        showToast('Address: Shop 10/1, Latif Plaza, Block 6, Gulshan-e-Iqbal');
+        showToast('Shop 10/1, Latif Plaza, Block 6, Gulshan-e-Iqbal');
       });
     });
   }
 
   /* -------------------------------------------------------------
-     9. TOAST NOTIFICATION UTILITY
+     6. TOAST NOTIFICATION
      ------------------------------------------------------------- */
   function showToast(message) {
-    const toast = document.getElementById('toastNotification');
-    const toastMsg = document.getElementById('toastMessage');
+    const toast = document.getElementById('toastBox') || document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg') || document.getElementById('toastMessage');
     if (!toast || !toastMsg) return;
 
     toastMsg.textContent = message;
@@ -388,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3800);
   }
 
-  // Keyboard accessibility: ESC key to close modals
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeBookingModal();
